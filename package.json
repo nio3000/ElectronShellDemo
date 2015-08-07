@@ -1,0 +1,18 @@
+{
+  "name": "ElectronShellDemo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "version": "0.0.1",
+  "description": "ElectronShellDemo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saan1984/ElectronShellDemo.git"
+  },
+  "author": "Sandeep Kumar Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^0.28.3"
+  }
+}

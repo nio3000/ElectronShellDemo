@@ -1,0 +1,25 @@
+<h1>Electron Shell Example</h1>
+
+<button onclick="openGoogle()">Google</button>
+<button onclick="selectItem()">Select Item</button>
+<button onclick="openItem()">Open Item</button>
+<button onclick="moveToTrash()">Move To Trash</button>
+<script>
+    var shell = require('shell'),
+        path = require('path');
+    var openGoogle = function(){
+        shell.openExternal('https://google.com');
+    };
+    var selectItem = function(){
+        var someFile = path.resolve("./Tutorial-Savvy-Logo.png");
+        shell.showItemInFolder(someFile);
+    };
+    var openItem = function(){
+        var someFile = path.resolve("./Tutorial-Savvy-Logo.png");
+        shell.openItem(someFile);
+    };
+    var moveToTrash = function(){
+        var someFile = path.resolve("./Tutorial-Savvy-Logo.png");
+        shell.moveItemToTrash(someFile);
+    };
+</script>
